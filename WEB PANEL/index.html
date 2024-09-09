@@ -13,14 +13,28 @@
 //EDIT UNDER THIS ONLY
 
 const  firebaseConfig = {
-apiKey: "API KEY",
-authDomain: "AUTH DOMAIN",
-databaseURL: "DATABSE URL",
-projectId: "PROJECT ID",
-storageBucket: "BUCKET URL",
-messagingSenderId: "SENDER ID",
-appId: "APP ID"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBJPtGttkkMIePUHHu-CG7UyhvUokOUgfA",
+  authDomain: "hacked-firekirin.firebaseapp.com",
+  databaseURL: "https://hacked-firekirin-default-rtdb.firebaseio.com",
+  projectId: "hacked-firekirin",
+  storageBucket: "hacked-firekirin.appspot.com",
+  messagingSenderId: "663860211673",
+  appId: "1:663860211673:web:1bea721c5dd02e9c3133c8",
+  measurementId: "G-YTYRP4TKS5"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
  
 
 //DON'T EDIT BELOW THIS
